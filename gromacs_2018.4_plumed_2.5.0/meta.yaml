@@ -1,6 +1,6 @@
 package:
   name: gromacs
-  version: 2018.4_plumed_2.5.0
+  version: 2018.4_plumed_2.5.3
 
 build:
   number: 0
@@ -18,7 +18,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - plumed2 =2.5.0
+    - plumed2 =2.5.3
     - mpich
   host:
     - openmp # [linux]
@@ -28,14 +28,14 @@ requirements:
   #  - fftw
     - perl
     - python >=2.7
-    - plumed2 =2.5.0
+    - plumed2 =2.5.3
   run:
  #   - ocl-icd
     - mpich
     - openmp # [linux]
  #   - fftw
     - libhwloc 1.*
-    - plumed2 =2.5.0
+    - plumed2 =2.5.3
 
 test:
   commands:
